@@ -246,3 +246,4 @@ BEGIN
         AND YEAR(RentalDate) = @Year
     RETURN @TotalRentals
 END
+

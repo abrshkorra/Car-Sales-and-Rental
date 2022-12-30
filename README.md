@@ -1,5 +1,3 @@
 # Car-Sales-and-Rental
-Team work on the database management for a car rental and sales organization. Using Microsoft SQL.
 
-## Purpose
-The purpose of a car sales and rental web application would be to enable customers to quickly, safely and easily browse, compare, purchase and rent vehicles in an efficient manner. It will allow customers to search for cars based on their needs and preferences such as make, model, budget range etc. This web application can also provide special offers for cars that maybe discounted or have lower monthly payments. Moreover, customers will be able to view ratings from other customers who have rented/bought the car so as to make an informed decision. This web application can also provide customers with information about the recent models available in the market from different car dealers which would allow them to choose one that best fits their budget and requirements. Additionally, the web application can enable customers to access special deals like discounts for longer rentals and loyalty rewards points for returning customers. Finally, it could also give them access to finance options if they decide to purchase a car instead of renting one.
+Team work on the database management for a car rental and sales organization. Using Microsoft SQL.
