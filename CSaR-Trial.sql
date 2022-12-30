@@ -208,5 +208,41 @@ DELETE FROM Rentals
 WHERE RentalID = 1
 
 
+/* function to calculate the total sales for a given month */
 
+CREATE FUNCTION fn_TotalSales
+(
+    @Month int,
+    @Year int
+)
+RETURNS money
 
+AS
+BEGIN
+    DECLARE @TotalSales money
+    SELECT @TotalSales = SUM(SalePrice)
+    FROM Sales
+    WHERE MONTH(SaleDate) = @Month
+        AND YEAR(SaleDate) = @Year
+    RETURN @TotalSales
+END
+
+/* function to calculate the total rentals for a given month */
+
+CREATE FUNCTION fn_TotalRentals
+(
+    @Month int,
+    @Year int
+)
+
+RETURNS money
+
+AS
+BEGIN
+    DECLARE @TotalRentals money
+    SELECT @TotalRentals = SUM(RentalPrice)
+    FROM Rentals
+    WHERE MONTH(RentalDate) = @Month
+        AND YEAR(RentalDate) = @Year
+    RETURN @TotalRentals
+END
